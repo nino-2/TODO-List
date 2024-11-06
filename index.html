@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <h3 class="textheader">Todo List</h3>
+    <p
+      class="animate__animated animate__infinite infinite animate__pulse alertsign"
+      style="display: none"
+      id="errorMsg"
+    >
+      Input fields can not be empty
+    </p>
+    <div class="input-grid">
+      <input
+        class="name-input"
+        type="text"
+        placeholder="Todo name"
+        id="todoName"
+      />
+      <input type="date" id="todoDate" class="selectdate" />
+      <button
+        class="close-button"
+        onclick="addTodo();
+    "
+      >
+        Add
+      </button>
+    </div>
+
+    <div id="show-result" class="todo-grid"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
