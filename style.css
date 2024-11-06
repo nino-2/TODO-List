@@ -58,14 +58,14 @@ body {
 @media (max-width: 600px) {
   .input-grid {
     display: grid;
-    grid-template-columns: 130px 125px 75px;
+    grid-template-columns: 130px 100px 75px;
     column-gap: 10px;
     row-gap: 10px;
     margin-bottom: 10px;
   }
   .todo-grid {
     display: grid;
-    grid-template-columns: 130px 125px 75px;
+    grid-template-columns: 130px 100px 75px;
     column-gap: 10px;
     row-gap: 10px;
   }
