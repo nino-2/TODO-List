@@ -19,12 +19,8 @@ function addTodo() {
 }
 
 function deleteTodo(index) {
-  // let confirmation = confirm("Are you sure you want to delete?");
-  // if (confirmation === true) {
   todoList.splice(index, 1);
   displayTodo();
-  // } else {
-  //   displayTodo();
 }
 
 function editTodo(index) {

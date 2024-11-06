@@ -53,35 +53,24 @@ body {
 }
 .textheader {
   text-align: center;
-  /* font-size: 18px;
-  font-weight: 500; */
 }
 
 @media (max-width: 600px) {
-  /* .input-grid,
-  .todo-grid {
-    width: 90%;
-  } */
   .input-grid {
     display: grid;
-    grid-template-columns: 130px 125px 80px;
+    grid-template-columns: 130px 120px 80px;
     column-gap: 10px;
     row-gap: 10px;
     margin-bottom: 10px;
   }
   .todo-grid {
     display: grid;
-    grid-template-columns: 130px 125px 80px;
+    grid-template-columns: 130px 120px 80px;
     column-gap: 10px;
     row-gap: 10px;
   }
 }
 @media (min-width: 601px) and (max-width: 1028px) {
-  /* .input-grid,
-  .todo-grid {
-    width: 80%;
-    justify-content: center;
-  } */
   .input-grid {
     display: grid;
     grid-template-columns: 300px 200px 180px;
