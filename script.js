@@ -1,5 +1,7 @@
 const todoList = [];
-
+document.querySelector(".add-todo").addEventListener("click", () => {
+  addTodo();
+});
 function addTodo() {
   const inputElement = document.getElementById("todoName");
   const name = inputElement.value;
@@ -37,14 +39,12 @@ function editTodo(index) {
 function displayTodo() {
   document.getElementById("show-result").innerHTML = "";
 
-  for (i = 0; i < todoList.length; i++) {
-    const todoObject = todoList[i];
+  todoList.forEach((todoObject, index) => {
     const { name, dueDate } = todoObject;
     document.getElementById(
       "show-result"
     ).innerHTML += ` <div class="specs">${name}</div> <div class="specs">${dueDate}</div>
-        <button onclick="deleteTodo(${i})" class="removetodo">Delete</button>
-    
+        <button onclick="deleteTodo(${index})" class="removetodo">Delete</button>
         `;
-  }
+  });
 }
